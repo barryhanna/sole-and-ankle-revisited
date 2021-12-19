@@ -64,21 +64,19 @@ const MainHeader = styled.div`
   align-items: baseline;
   padding: 9px 16px;
   border-bottom: 1px solid ${COLORS.gray[300]};
+  overflow: auto;
 
   @media ${QUERIES.phoneAndUp} {
     padding: 18px 32px;
-  }
-
-  @media ${QUERIES.tabletAndUp} {
-    max-height: 72px;
   }
 `;
 
 const Nav = styled.nav`
   display: none;
+
   @media ${QUERIES.tabletAndUp} {
     display: flex;
-    gap: 48px;
+    gap: clamp(1rem, 9.2vw - 4.5rem, 3.5rem);
     margin: 0px 48px;
   }
 `;
