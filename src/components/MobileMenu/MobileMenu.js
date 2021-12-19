@@ -36,7 +36,7 @@ const MobileMenu = ({ isOpen, onDismiss }) => {
 };
 
 const Overlay = styled(DialogOverlay)`
-  background: hsla(220deg, 5%, 40%, 0.8);
+  background: var(--color-backdrop);
   position: fixed;
   inset: 0;
   display: flex;
